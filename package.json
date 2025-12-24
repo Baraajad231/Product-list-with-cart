@@ -1,0 +1,19 @@
+{
+  "name": "product-list-with-cart-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product list with cart coding challenge](./preview.jpg)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vite": "^7.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
