@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.scss" />
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="desserts">
+        <h2 class="desserts__title">Desserts</h2>
+        <div class="products"></div>
+      </div>
+      <aside class="cart">
+        <h3 class="cart__title">
+          Your Cart (<span class="cart__count">0</span>)
+        </h3>
+
+        <div class="cart__empty">
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt=""
+            class="cart__empty-img"
+          />
+          <p class="cart__empty-text">Your added items will appear here</p>
+        </div>
+
+        <div class="cart__items">
+          <ul class="cart__list">
+            <!-- <li class="item">
+              <div class="item__details">
+                <h5 class="item__name">Classic Tiramisu</h5>
+                <span class="item__quantity">1x</span
+                ><span class="item__price">@ $5.50</span
+                ><span class="item__price-total">$5.50</span>
+              </div>
+              <button class="item__remove button">
+                <img src="./assets/images/icon-remove-item.svg" alt="" />
+              </button>
+            </li> -->
+          </ul>
+          <div class="cart__total">
+            Order Total <span class="cart__total-value">$0</span>
+          </div>
+          <div class="cart__text">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p class="cart__text-note">
+              Tihs is a <span>carbon-neutral</span> delevery
+            </p>
+          </div>
+          <button class="cart__confirm button">Confirm Order</button>
+        </div>
+      </aside>
+
+      <div id="order-backdrop" class="order-backdrop hidden"></div>
+
+      <div class="order-confirmation hidden">
+        <img
+          class="order-confirmation__icon"
+          src="./assets/images/icon-order-confirmed.svg"
+          alt=""
+        />
+        <div class="order-confirmation__text">
+          <h3 class="order-confirmation__title">Order Confirmation</h3>
+          <p class="order-confirmation__subtitle">
+            We hope you enjoy your food!
+          </p>
+        </div>
+        <div class="order-confirmation__content">
+          <ul class="order-confirmation__items">
+            <!-- <li class="order-item">
+              <div class="order-item__details">
+                <img
+                  class="order-item__image"
+                  src="./assets/images/image-baklava-thumbnail.jpg"
+                  alt=""
+                />
+                <div class="order-item__info">
+                  <h5 class="order-item__name">Pistachio Baklava</h5>
+                  <div class="order-item__meta">
+                    <span class="order-item__quantity">1x</span>
+                    <span class="order-item__price">@ $5.00</span>
+                  </div>
+                </div>
+              </div>
+              <span class="order-item__total">$5.00</span>
+            </li> -->
+          </ul>
+          <div class="order-confirmation__total">
+            Order Total <span class="order-confirmation__total-value">$0</span>
+          </div>
+        </div>
+        <button class="order-confirmation__restart button">
+          Start New Order
+        </button>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>
